@@ -1,0 +1,86 @@
+/* Body centered on screen */
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef7ff;
+}
+
+/* Form */
+form {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  max-width: 600px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+/* From/To group */
+h3.sender-receiver {
+  color: #000000;
+  font-size: 16px;
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+/* Content group */
+.content-group h3 {
+  color: #004aad;
+  font-size: 18px;
+  line-height: 1.5;  /* line spacing within h3 */
+  text-align: center;
+}
+
+/* Add spacing Content -> From/To */
+.content-group {
+  margin-top: 30px; /* Add spacing From/To -> Content */
+  margin-bottom: 30px; /* Add spacing Content -> other parts */
+}
+
+/* Input text and submit button */
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+/* Input text */
+input[type="text"] {
+  padding: 10px;
+  margin: 6px 0 15px;
+  border: 1px solid #ccc;
+}
+
+/* Submit button */
+input[type="submit"] {
+  padding: 10px;
+  background: #004aad;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+  background: #0070ff;
+}
+
+/* Radio button */
+input[type="radio"] {
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+/* Radio group spacing */
+.radio-group {
+  margin-bottom: 20px;
+}
