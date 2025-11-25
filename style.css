@@ -1,86 +1,101 @@
-/* Body centered on screen */
+/* Body căn giữa */
 body {
-  font-family: 'Nunito', sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #eef7ff;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eef7ff;
 }
 
-/* Form */
+/* Form gọn, đẹp */
 form {
-  background: #ffffff;
-  padding: 25px 30px;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  max-width: 600px;
-  width: 90%;
-  box-sizing: border-box;
+    background: #fff;
+    padding: 20px 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 450px;
+    box-sizing: border-box;
 }
 
-/* From/To group */
+/* Khối form */
+.block {
+    margin-bottom: 15px;
+}
+
+/* Nhãn From/To */
+.info-text {
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+/* Câu hỏi màu xanh, to, đậm, canh giữa */
+.question-text {
+    color: #004aad;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Nhãn & tiêu đề ô nhập */
 h3.sender-receiver {
-  color: #000000;
-  font-size: 16px;
-  margin: 5px 0;
-  font-weight: normal;
+    font-size: 14px;
+    margin: 5px 0 2px;
+    font-weight: normal;
+    color: #004aad;
 }
 
-/* Content group */
-.content-group h3 {
-  color: #004aad;
-  font-size: 18px;
-  line-height: 1.5;  /* line spacing within h3 */
-  text-align: center;
+/* Input và textarea */
+.input-block {
+    margin-bottom: 10px;
 }
 
-/* Add spacing Content -> From/To */
-.content-group {
-  margin-top: 30px; /* Add spacing From/To -> Content */
-  margin-bottom: 30px; /* Add spacing Content -> other parts */
-}
-
-/* Input text and submit button */
 input[type="text"],
-input[type="submit"] {
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 15px;
-  border-radius: 8px;
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 5px 8px;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 2px;
 }
 
-/* Input text */
-input[type="text"] {
-  padding: 10px;
-  margin: 6px 0 15px;
-  border: 1px solid #ccc;
+textarea {
+    resize: none;
+    height: 60px;
 }
 
-/* Submit button */
+/* Radio group */
+.radio-group {
+    margin: 5px 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Nút gửi */
 input[type="submit"] {
-  padding: 10px;
-  background: #004aad;
-  color: #fff;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #004aad;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background: #0070ff;
-}
-
-/* Radio button */
-input[type="radio"] {
-  margin-right: 6px;
-  cursor: pointer;
-}
-
-/* Radio group spacing */
-.radio-group {
-  margin-bottom: 20px;
+    background: #0066e6;
 }
