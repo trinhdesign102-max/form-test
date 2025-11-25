@@ -1,42 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="utf-8">
-<title>Haastattelun Tuloksen Lomake</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback Form</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<form action="mailto:trinhdesign102@gmail.com" method="get">
-  
-  <!-- From/To -->
-<h3 class="sender-receiver">
-  From: Le Ngoc Phuong Trinh (Opiskelijalta)<br>
-  To: Kai Suuronen (Opettajalle)
-</h3>
+<form id="feedbackForm" action="https://formspree.io/f/xwpjqgan" method="POST">
+    <!-- Khối 1: From / To -->
+    <div class="block">
+        <p class="info-text"><strong>From:</strong> Le Ngoc Phuong Trinh</p>
+        <p class="info-text"><strong>To:</strong> Kai Suuronen</p>
+    </div>
 
-  <!-- Content -->
-  <div class="content-group">
-  <h3>Sataako tänään kauniisti lunta ulkona? ❄️☃️<br>
-    Opettaja, voisitteko kertoa haastatteluni tuloksen?
-  </h3>
-</div>
+    <!-- Khối 2: Câu hỏi -->
+    <div class="block">
+        <p class="question-text">
+            Onko sataa lunta kauniisti ikkunasta ulkona? ❄️☃️<br>
+            Opettaja, voisitteko kertoa minulle haastatteluni tuloksen?
+        </p>
+    </div>
 
-  <!-- Radio buttons -->
-  <div class="radio-group">
-  <input type="radio" name="tulos" value="Accepted (Hyväksytty)"> Accepted (Hyväksytty)<br>
-  <input type="radio" name="tulos" value="Rejected (Hylätty)"> Rejected (Hylätty)
-</div>
+    <!-- Khối 3: Radio -->
+    <div class="block">
+        <h3 class="sender-receiver">Tulos</h3>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="tulos" value="😀Accepted (Hyväksytty)" checked>
+                <strong>😀Accepted</strong> (Hyväksytty)
+            </label><br>
+            <label>
+                <input type="radio" name="tulos" value="😞Rejected (Hylätty)">
+                <strong>😞Rejected</strong> (Hylätty)
+            </label>
+        </div>
+    </div>
 
-  <!-- Text input -->
-  Nimi: <input type="text" name="nimi" placeholder="Sinun nimesi"><br>
+    <!-- Khối 4: Các ô nhập -->
+    <div class="block">
+        <h3 class="sender-receiver">Nimi</h3>
+        <div class="input-block">
+            <input type="text" name="name" placeholder="Kirjoita nimesi" required>
+        </div>
 
-  <!-- Submit button -->
-  <input type="submit" value="Lähetä">
+        <h3 class="sender-receiver">Sähköposti</h3>
+        <div class="input-block">
+            <input type="email" name="email" placeholder="Kirjoita sähköpostisi" required>
+        </div>
 
+        <h3 class="sender-receiver">Viesti</h3>
+        <div class="input-block">
+            <textarea name="message" placeholder="Kirjoita viestisi" required></textarea>
+        </div>
+    </div>
+
+    <!-- Khối 5: Nút gửi -->
+    <div class="block">
+        <input type="submit" value="Lähetä">
+    </div>
 </form>
 
 </body>
 </html>
-
