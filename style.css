@@ -1,4 +1,4 @@
-/* Body căn giữa */
+/* Body centered */
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
@@ -9,7 +9,7 @@ body {
     background: #eef7ff;
 }
 
-/* Form gọn, đẹp */
+/* Design Form*/
 form {
     background: #fff;
     padding: 20px 25px 30px;
@@ -20,18 +20,18 @@ form {
     box-sizing: border-box;
 }
 
-/* Khối form */
+/* Block Form */
 .block {
     margin-bottom: 15px;
 }
 
-/* Nhãn From/To */
+/* From/To */
 .info-text {
     font-size: 14px;
     margin: 3px 0;
 }
 
-/* Câu hỏi màu xanh, to, đậm, canh giữa */
+/* Question-text */
 .question-text {
     color: #004aad;
     font-weight: bold;
@@ -40,7 +40,7 @@ form {
     margin: 10px 0;
 }
 
-/* Nhãn & tiêu đề ô nhập */
+/* Form fields & Placeholder */
 h3.sender-receiver {
     font-size: 14px;
     margin: 5px 0 2px;
@@ -82,7 +82,7 @@ textarea {
     margin-right: 5px;
 }
 
-/* Nút gửi */
+/* Submit Button */
 input[type="submit"] {
     width: 100%;
     padding: 8px;
